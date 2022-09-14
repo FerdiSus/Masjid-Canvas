@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Masjid (FERDI)</title>
+  </head>
+
+  <body>
+   <canvas id="bukugambar" width="900"  height="560" style="border: 1px solid black;"  ></canvas>
+    
+   <script>
+      let canvas = document.getElementById("bukugambar");
+      let context = canvas.getContext("2d");
+      let width = canvas.width;
+      let height = canvas.height;
+//dinding
+      context.fillStyle = "DarkGray";
+      context.fillRect(220,270,460,250);
+      context.strokeRect(220,270,460,250);
+//kubah
+      context.fillStyle = "gold";
+      context.beginPath();
+      context.arc(450,255,150,1*Math.PI,2*Math.PI);
+      context.strokeRect(450,255,150,0,1*Math.PI,2*Math.PI);
+      context.closePath();
+      context.stroke();
+      context.fill();
+      context.stroke();
+
+      context.beginPath();
+      context.arc(448,70,23,4/3*Math.PI,2/3*Math.PI);
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(450,103);
+      context.lineTo(450,92);
+     
+      context.fillStyle = "rgb(192, 237, 166)";
+      context.fillRect(280,252,340,18);
+      context.strokeRect(280,252,340,18);
+      context.stroke();
+
+//pintu
+      context.fillStyle = "White";
+      context.fillRect(410,400,75,120);
+      context.stroke();
+      context.strokeRect(410,400,75,120);
+
+     context.fillStyle ="LightGray";
+     context.beginPath();
+     context.arc(447,400,38,1*Math.PI,2*Math.PI);
+     context.closePath();
+     context.stroke();
+     context.fill();
+
+//kaca
+      //kaca kiri
+      context.fillStyle = "Aquamarine";
+      context.fillRect(270,320,70,165);
+      context.strokeRect(270,320,70,165);
+           //garis 1
+      context.beginPath();
+      context.moveTo(280,380);
+      context.lineTo(325,350);
+      context.closePath();
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(290,380);
+      context.lineTo(325,357);
+      context.closePath();
+      context.stroke();
+          //garis 2
+      context.beginPath();
+      context.moveTo(280,450);
+      context.lineTo(325,420);
+      context.closePath();
+      context.stroke();
+      
+      context.beginPath();
+      context.moveTo(290,450);
+      context.lineTo(325,427);
+      context.closePath();
+      context.stroke();
+      
+     //kaca kanan
+      context.fillStyle = "Aquamarine";
+      context.fillRect(556,320,70,165);
+      context.strokeRect(556,320,70,165);
+           //garis 1
+      context.beginPath();
+      context.moveTo(570,375);
+      context.lineTo(615,345);
+      context.closePath();
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(580,375);
+      context.lineTo(615,352);
+      context.closePath();
+      context.stroke();
+          //garis 2
+      context.beginPath();
+      context.moveTo(570,445);
+      context.lineTo(615,415);
+      context.closePath();
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(580,445);
+      context.lineTo(615,422);
+      context.closePath();
+      context.stroke();
+      
+//Jalanan
+      context.fillStyle ="Peru";
+      context.beginPath();
+      context.moveTo(410,522);
+      context.lineTo(320,560);
+      context.lineTo(565,560);
+      context.closePath();
+      context.fill();
+    
+      context.fillStyle ="Peru";
+      context.beginPath();
+      context.moveTo(485,522);
+      context.lineTo(320,560);
+      context.lineTo(565,560);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle ="Peru";
+      context.fillRect(410,521,75,15);
+//pilar 
+     //kiri
+     context.fillStyle ="grey";
+     context.fillRect(137,180,80,340);
+     context.strokeRect(138,180,80,340);
+
+     context.fillStyle ="gold";
+     context.beginPath();
+     context.arc(178,180,40,1*Math.PI,2*Math.PI);
+     context.closePath();
+     context.fill();
+     context.stroke();
+
+     context.fillStyle ="LightCyan";
+     context.fillRect(153,200,50,55);
+     context.strokeRect(153,200,50,55);
+
+     context.fillStyle ="LightCyan";
+     context.fillRect(153,330,50,55);
+     context.strokeRect(153,330,50,55);
+
+     //kanan
+     context.fillStyle ="grey";
+     context.fillRect(679,180,80,340);
+     context.strokeRect(678,180,80,340);
+
+     context.fillStyle ="gold";
+     context.beginPath();
+     context.arc(718,180,40,1*Math.PI,2*Math.PI);
+     context.closePath();
+     context.fill();
+     context.stroke();
+
+     context.fillStyle ="LightCyan";
+     context.fillRect(693,198,50,55);
+     context.strokeRect(693,198,50,55);
+
+     context.fillStyle ="LightCyan";
+     context.fillRect(693,328,50,55);
+     context.strokeRect(693,328,50,55);
+    </script>
+      
+    </body>
+    
+</html>
